@@ -32,5 +32,5 @@ The goal of this project is to analyze historical trends of EV registrations in 
 
 ### 3. Google Sheets Dashboard Design
 The clean historical data and the forecasted predictions were imported into Google Sheets to build a dashboard featuring:
-*   **KPI Scorecards:** Total active EVs, current market share, and year-over-year growth rate.
+*   **KPI Scorecards:** Total active EVs, current market share, and 5-year growth rate.
 *   **Charts:** Historical growth curves mapped directly alongside future forecasted trends.
