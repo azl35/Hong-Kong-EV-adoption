@@ -26,12 +26,11 @@ The goal of this project is to analyze historical trends of EV registrations in 
 *   **Python Processing:** Using `pandas`, the data was cleaned, missing values were handled, and registrations were aggregated chronologically to establish a clean time-series baseline.
 
 ### 2. Modeling & Forecasting (Python)
-*   We developed a forecasting script in Python (found in [`/notebooks`](./notebooks/) or your file name: `EV_Forecasting.ipynb`).
-*   **Model Used:** [Mention your forecasting model here, e.g., Prophet / ARIMA / Exponential Smoothing / Linear Regression].
-*   The script outputs a predictive DataFrame (`forecast_df`) projecting EV registration counts and adoption rates through `[Target Year, e.g., 2028/2030]`.
+*   I developed a forecasting script in Python ('HK_EV_adoption.ipynb').
+*   **Model Used:** Polynomial Regression (Degree 2) via scikit-learn. The model fits a quadratic curve to historical EV market share trends to capture the accelerating pace of adoption.
+*   The script outputs a predictive DataFrame (`forecast_df`) projecting EV registration counts and adoption rates through 2030.
 
 ### 3. Google Sheets Dashboard Design
-The clean historical data and the forecasted predictions were imported into Google Sheets to build an executive-level dashboard featuring:
+The clean historical data and the forecasted predictions were imported into Google Sheets to build a dashboard featuring:
 *   **KPI Scorecards:** Total active EVs, current market share, and year-over-year growth rate.
-*   **Interactive Charts:** Historical growth curves mapped directly alongside future forecasted trends.
-*   **Dynamic Filters:** Ability to filter data by [mention filters, e.g., Vehicle Class, Year, Fuel Type].
+*   **Charts:** Historical growth curves mapped directly alongside future forecasted trends.
