@@ -12,7 +12,7 @@ Dashboard Access & Previews
 *   **Static Backup:** If you prefer offline access, the Excel version of the dashboard is available as a file in this repository.
 
 > **Dashboard Preview:**
-<img width="1287" height="714" alt="image" src="https://github.com/user-attachments/assets/0653938e-9d44-48fe-80a6-2a8f8ec2babf" />
+<img width="1298" height="705" alt="image" src="https://github.com/user-attachments/assets/a44e48c0-c814-490f-9c61-55ee737ec8e9" />
 
 ---
 
@@ -23,7 +23,7 @@ The goal of this project is to analyze historical trends of EV registrations in 
 ### 1. Data Sourcing & Cleaning
 *   **Data Origin:** Raw monthly vehicle registration records compiled from the Hong Kong Transport Department.
 *   **Data Source:** Sourced via the community-maintained [Webb-Database mirror](https://webb-database.com/) (the open-source continuation of the legacy Webb-site database).
-*   **Python Processing:** Using `pandas`, the data was cleaned, missing values were handled, and registrations were aggregated chronologically to establish a clean time-series baseline.
+*   **Python Processing:** Using `pandas`, the data was cleaned and registrations were aggregated chronologically to establish a clean time-series baseline.
 
 ### 2. Modeling & Forecasting (Python)
 *   I developed a forecasting script in Python ('HK_EV_adoption.ipynb').
