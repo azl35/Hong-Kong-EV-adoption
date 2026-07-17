@@ -22,7 +22,7 @@ The goal of this project is to analyze historical trends of EV registrations in 
 
 ### 1. Data Sourcing & Cleaning
 *   **Data Origin:** Raw monthly vehicle registration records compiled from the Hong Kong Transport Department.
-*   **Data Source:** Sourced via the community-maintained [Webb-Database mirror](https://webb-site.com/) (the open-source continuation of the legacy Webb-site database).
+*   **Data Source:** Sourced via the community-maintained [Webb-Database mirror](https://webb-database.com/) (the open-source continuation of the legacy Webb-site database).
 *   **Python Processing:** Using `pandas`, the data was cleaned, missing values were handled, and registrations were aggregated chronologically to establish a clean time-series baseline.
 
 ### 2. Modeling & Forecasting (Python)
