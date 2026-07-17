@@ -1,1 +1,37 @@
 Data compiled from the HK Transport Department's monthly vehicle registration records, sourced via the community-maintained Webb-Database mirror (the open-source continuation of the legacy Webb-site database).
+
+
+Hong Kong EV Adoption Analysis & Forecasting Dashboard
+
+An end-to-end data analysis, forecasting, and visualization project tracking the trajectory of Electric Vehicle (EV) adoption in Hong Kong. This project cleans raw registration data, uses time-series forecasting in Python to predict future trends, and visualizes the insights in an interactive Google Sheets executive dashboard.
+
+---
+Dashboard Access & Previews
+
+*   **Interactive Dashboard:** [Access Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/12CoKswkyZ6Zl-4paeVbr6ws6ZkYlynNHEJ6Jtqm7Wdw/edit?usp=sharing) *(View Only)*
+*   **Static Backup:** If you prefer offline access, the Excel version of the dashboard is available as a file in this repository.
+
+> **Dashboard Preview:**
+<img width="1287" height="714" alt="image" src="https://github.com/user-attachments/assets/0653938e-9d44-48fe-80a6-2a8f8ec2babf" />
+
+---
+
+## Project Overview & Workflow
+
+The goal of this project is to analyze historical trends of EV registrations in HK and forecast market penetration over the next few years. The workflow is divided into three major stages:
+
+### 1. Data Sourcing & Cleaning
+*   **Data Origin:** Raw monthly vehicle registration records compiled from the Hong Kong Transport Department.
+*   **Data Source:** Sourced via the community-maintained [Webb-Database mirror](https://webb-site.com/) (the open-source continuation of the legacy Webb-site database).
+*   **Python Processing:** Using `pandas`, the data was cleaned, missing values were handled, and registrations were aggregated chronologically to establish a clean time-series baseline.
+
+### 2. Modeling & Forecasting (Python)
+*   We developed a forecasting script in Python (found in [`/notebooks`](./notebooks/) or your file name: `EV_Forecasting.ipynb`).
+*   **Model Used:** [Mention your forecasting model here, e.g., Prophet / ARIMA / Exponential Smoothing / Linear Regression].
+*   The script outputs a predictive DataFrame (`forecast_df`) projecting EV registration counts and adoption rates through `[Target Year, e.g., 2028/2030]`.
+
+### 3. Google Sheets Dashboard Design
+The clean historical data and the forecasted predictions were imported into Google Sheets to build an executive-level dashboard featuring:
+*   **KPI Scorecards:** Total active EVs, current market share, and year-over-year growth rate.
+*   **Interactive Charts:** Historical growth curves mapped directly alongside future forecasted trends.
+*   **Dynamic Filters:** Ability to filter data by [mention filters, e.g., Vehicle Class, Year, Fuel Type].
